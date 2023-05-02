@@ -365,10 +365,6 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.version=$(TARGET_VENDOR_VERSION)
 
-#aethercastctl
-PRODUCT_PROPERTY_OVERRIDES += \
-    ubuntu.widi.supported=1
-
 # Force aal camera on UT for now
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ubuntu.camera_plugin=aal
