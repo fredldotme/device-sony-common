@@ -369,6 +369,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ubuntu.camera_plugin=aal
 
+# Ensure a readable EGL swap interval property
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.egl.swapinterval=1
+
 # Ubuntu Touch Mir/hybris integration & multimedia playback support
 PRODUCT_PACKAGES += \
     libmedia_compat_layer \
