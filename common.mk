@@ -75,12 +75,6 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
     $(COMMON_PATH)/rootdir/vendor/etc/data/qmi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/qmi_config.xml
 
-# Ubuntu Touch common USB initialization
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/halium/usr/share/usbinit/setupusb:system/halium/usr/share/usbinit/setupusb \
-    $(COMMON_PATH)/rootdir/system/halium/etc/init/mtp-state.conf:system/halium/etc/init/mtp-state.conf \
-    $(COMMON_PATH)/rootdir/system/halium/usr/share/upstart/sessions/mtp-server.conf:system/halium/usr/share/upstart/sessions/mtp-server.conf
-
 # Audio
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
